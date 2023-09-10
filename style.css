@@ -142,6 +142,10 @@ h5{
     background-image: url('slackpic.jpg');
     background-size: cover;
 }
+
+a{
+    text-decoration: none;
+}
 }
 
 @media only screen and (max-width: 412px) { 
