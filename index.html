@@ -34,9 +34,9 @@
     <main class="main">
         <section class="first">
             <article class="details">
-                <h2 data-testid="slackUserName">Henry Mishael <br> Onyekachukwu.</h2>
-                <p id='lg' data-testid="myTrack">I am a Front-End Developer. I like to   craft solid and <br>scalable frontend products  with great user experiences.</p>
-                <p id="sm" data-testid="myTrack">I am a Front-End Developer. I like to   craft solid and scalable frontend products  with great user <br>experiences.</p>
+                <h2 data-testid="slackUserName">Henry Mishael</h2>
+                <p id='lg' >I am a <span data-testid="myTrack">Front-End Developer</span> . I like to   craft solid and <br>scalable frontend products  with great user experiences.</p>
+                <p id="sm" >I am a <span data-testid="myTrack">Front-End Developer</span>. I like to   craft solid and scalable frontend products  with great user <br>experiences.</p>
                 <div class="datetime_holder" >
                     <span>
                         <h5>Current Day of the week:</h5>
@@ -53,7 +53,9 @@
             </div>
             <figure class="pic_holder">
                 <div class="outline"></div>
-                <div data-testid="slackDisplayImage" class='pic'></div>
+                <div class='pic'>
+                    <img data-testid="slackDisplayImage"  src="slackpic.jpg" alt="Henry Mishael">
+                </div>
             </figure>
         </section>
     </main>

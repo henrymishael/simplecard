@@ -1,6 +1,7 @@
  //Function to get current day
  function getCurrentDay() {
     const day = new Date().getDay();
+
     if(day === 1){
         return 'Monday'
     }
@@ -25,17 +26,21 @@
     else{
         return 'Not a number'
     }
+
  }
 
  //Function to get current UTC time
  function getCurrentTime(){
-    const time = new Date().getUTCMilliseconds()
-    return time
-    
-
-
-
+    let milliseconds = new Date().getUTCMilliseconds()
+    let hour = new Date().getUTCHours()
+    let minute = new Date().getUTCMinutes()
+    let seconds = new Date().getUTCSeconds();
+    return `${milliseconds}`
  }
+
+
+
+
 //Target an HTML element to display the current day
 const dayDisplay = document.getElementById("date_holder")
 
@@ -47,6 +52,8 @@ dayDisplay.innerHTML = getCurrentDay();
 
 //set the innerHTML of the element to the current time
 timeDisplay.innerHTML = getCurrentTime();
+setInterval(getCurrentTime, 1000)
+
 
 
 
