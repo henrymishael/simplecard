@@ -1,0 +1,148 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color: white;
+    position: relative;
+    width:100vw;
+    height:100vh;
+    font-family: 'Cabin', sans-serif;
+    
+}
+
+header{
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+   
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+button{
+    height: 50px;
+    width: 150px;
+    border-radius: 8px;
+    border: none;
+    outline:white;
+    background-color: #4831D4;
+    color: white;
+    font-size: 16px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    gap:.5em;
+}
+
+button:hover{
+    background-color: white;
+    color:black;
+}
+
+main{
+    width:100%;
+    height:100vh;
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+}
+
+
+.first{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.details{
+    width:65vw;
+    height:100%;
+    background-color: #4831D4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 150px;
+    font-family: 'Cabin', sans-serif;
+    /* font-family: 'Syne', sans-serif; */
+}
+
+h2{
+    font-size: 70px;
+    color: #CCF381;
+    font-weight:bolder;
+    letter-spacing: 1px;
+}
+
+p{
+    color: rgba(255, 255, 255, 0.785);
+    font-size: 20px;
+    line-height: 1.25em;
+    margin-top: .8em;
+}
+
+h5{
+    color:#CCF381;
+    font-size:16px;
+}
+
+.datetime_holder{
+    display:flex;
+    flex-direction: row;
+    gap:3em;
+    margin-top:4em;
+}
+
+.place_holder{
+    width:35vw;
+    height:100%;
+    background-color: #CCF381;
+}
+
+.pic_holder{
+    position:absolute;
+    height:400px;
+    width:400px;
+    background-color: transparent;
+    left: 50em;
+    top: 10em;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.outline{
+    border: 2px dotted white;
+    width:300px;
+    height:300px;
+    margin-left:60px;
+    margin-top:60px;
+
+}
+.pic{
+    background-color: maroon;
+    width:300px;
+    height:300px;
+    z-index: 2;
+    position:absolute;
+    background-image: url('slackpic.jpg');
+    background-size: contain;
+}
+
+
+
+
+
