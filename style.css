@@ -151,7 +151,7 @@ h5{
     }
     
     body{
-        background-color: white;
+        background-color: black;
         position: relative;
         width:100vw;
         height:100vh;
@@ -160,7 +160,7 @@ h5{
 
     header{
         position: absolute;
-        background-color: transparent;
+        background-color:tra;
         width: 100%;
         height: 80px;
         display:flex;
@@ -181,6 +181,8 @@ h5{
     nav>svg{
         width:100px;
         height:100px;
+        color: #000;
+        
     }
 
     button{
@@ -197,13 +199,18 @@ h5{
         align-items: center;
         justify-content:center;
         gap:.5em;
+        
     }
+    
     
     button:hover{
         background-color: white;
         color:black;
     }
-   
+
+    a{
+        text-decoration: none;
+    }
     main{
         width:100%;
         height:100vh;
@@ -256,6 +263,19 @@ h5{
     h5{
         color:#CCF381;
         font-size:14px;
+    }
+
+    .pic_holder{
+        position: absolute;
+        height:200px;
+        width:200px;
+        background-color: transparent;
+        left: 50em;
+        top: 10em;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 }
 
